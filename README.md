@@ -32,6 +32,9 @@ AWS automatically manages the following addons:
 - metrics server
 - networking dataplane components
 
+The module also installs the following via Helm:
+- **cert-manager** — issues/renews in-cluster TLS certificates and is the prerequisite for webhook-based operators such as the ADOT operator used by the `aws-eks-otel-adot` module.
+
 ## Limitations
 
 In auto mode, AWS manages a fleet of nodes which prevents you from performing various operations:
