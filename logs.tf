@@ -1,6 +1,6 @@
 module "logs" {
   source  = "nullstone-modules/logs/aws"
-  version = "~> 0.2.0"
+  version = "~> 0.3.0"
 
   // See https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html
   name              = "/aws/eks/${local.resource_name}/cluster"
